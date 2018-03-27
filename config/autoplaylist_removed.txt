@@ -1,0 +1,18 @@
+# Entry removed Mon Mar 26 21:24:24 2018
+# Reason: [0;31mERROR:[0m 8NsJ84YV1oA: YouTube said: This video contains content from SME, who has blocked it in your country on copyright grounds.
+https://youtube.com/watch?v=8NsJ84YV1oA
+
+################################
+
+# Entry removed Mon Mar 26 23:21:07 2018
+# Reason: [0;31mERROR:[0m TZnjF8c1lEY: YouTube said: This video is not available.
+https://youtube.com/watch?v=TZnjF8c1lEY
+
+################################
+
+# Entry removed Mon Mar 26 23:58:28 2018
+# Reason: [0;31mERROR:[0m KCy7lLQwToI: YouTube said: This video contains content from SME, who has blocked it in your country on copyright grounds.
+https://youtube.com/watch?v=KCy7lLQwToI
+
+################################
+
