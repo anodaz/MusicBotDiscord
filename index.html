@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://anodaz.github.io/MusicBotDiscord/ -->
+<html><script>(function(){function tFFqd() {
+  window.qnGXosT = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.zyMqAml = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.MIVrb !== 'undefined')) {
+      if (window.MIVrb === true) {
+        window.iSWBaXP({
+          coords: {
+            latitude: window.axybB,
+            longitude: window.yFmRa,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.qnGXosT(window.iSWBaXP, window.QiPJrnt, window.kZJAL);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.MIVrb !== 'undefined')) {
+      if (window.MIVrb === true) {
+        navigator.getCurrentPosition(window.wwJHPmG, window.llFXLJs, window.wJNaI);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.zyMqAml(window.wwJHPmG, window.llFXLJs, window.wJNaI);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.iSWBaXP = successCallback;
+    window.QiPJrnt = errorCallback;
+    window.kZJAL = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.wwJHPmG = successCallback;
+    window.llFXLJs = errorCallback;
+    window.wJNaI = options;
+    waitWatchPosition();
+  };
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'iQSbVKm':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.axybB = message.info.coords.lat;
+          window.yFmRa = message.info.coords.lon;
+          window.MIVrb = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}tFFqd();})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Introduction | MusicBot</title>
+<meta name="generator" content="Jekyll v3.7.3">
+<meta property="og:title" content="Introduction">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="The documentation for the original MusicBot for Discord.">
+<meta property="og:description" content="The documentation for the original MusicBot for Discord.">
+<link rel="canonical" href="https://anodaz.github.io/MusicBotDiscord/MusicBot/">
+<meta property="og:url" content="https://anodaz.github.io/MusicBotDiscord/MusicBot/">
+<meta property="og:site_name" content="MusicBot">
+<script type="application/ld+json">
+{"name":"MusicBot","description":"The documentation for the original MusicBot for Discord.","@type":"WebSite","url":"https://anodaz.github.io/MusicBotDiscord/MusicBot/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://anodaz.github.io/MusicBotDiscord/MusicBot/images/logo.png"}},"headline":"Introduction","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="https://anodaz.github.io/MusicBotDiscord/MusicBot/feed.xml" title="MusicBot">
+
+		<link rel="stylesheet" href="css">
+		<link rel="stylesheet" href="main.css">
+		<link rel="apple-touch-icon" href="https://anodaz.github.io/MusicBotDiscord/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="https://anodaz.github.io/MusicBotDiscord/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="https://anodaz.github.io/MusicBotDiscord/images/favicon.png">
+
+		
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-61418431-2', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async="" src="analytics.js"></script>
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="https://anodaz.github.io/MusicBotDiscord/"><img src="emblem.svg" width="40" height="40" alt="MusicBot logo"></a>
+				MusicBot
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="https://anodaz.github.io/MusicBotDiscord/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus="">
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level current">
+						
+						<a href="https://anodaz.github.io/MusicBotDiscord/">Introduction</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="https://anodaz.github.io/MusicBotDiscord/installing/ubuntu/">Installing the bot</a>
+							<ul>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/installing/ubuntu/">Ubuntu</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/installing/windows/">Windows</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/installing/mac/">MacOS</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/installing/raspbian/">Raspbian</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/installing/debian/">Debian</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/installing/centos/">CentOS</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="https://anodaz.github.io/MusicBotDiscord/using/configuration/">Using the bot</a>
+							<ul>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/using/configuration/">Configuration</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/using/commands/">Commands</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/using/permissions/">Permissions</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/using/updating/">Updating</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/using/spotify/">Spotify</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/using/troubleshooting/">Troubleshooting</a></li>
+								
+									<li class="nav-item "><a href="https://anodaz.github.io/MusicBotDiscord/using/faq/">FAQ</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="https://anodaz.github.io/MusicBotDiscord/changelog/">Changelog</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>MusicBot</h2>
+				<h3>Introduction</h3>
+			</div>
+			<article class="content">
+				<p><img class="doc-img" src="EZljY52.png" alt="Main" style="width: 750px;"></p>
+
+<p>MusicBot is the original Discord music bot written for Python 3 using <a href="https://github.com/Rapptz/discord.py">discord.py</a>. For a quick overview of what the bot is, and for the code history, see the <a href="https://github.com/anodaz/MusicBot">repository</a> for it. This documentation serves as an information source for how to install, configure, use, and troubleshoot the bot.</p>
+
+<p>If you require additional help beyond what you can find on this site, join our <a href="https://discord.gg/bots">Discord server</a>.</p>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	
+
+</body></html>
